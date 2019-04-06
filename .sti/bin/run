@@ -6,8 +6,8 @@ echo | pwd
 echo |ls
 mv /tmp/src/helloworld-ws/target/ROOT.war /opt/eap/standalone/deployments/helloworld-ws.war
 mv /tmp/src/target/jtestAtifId.war /opt/eap/standalone/deployments/jtestAtifId.war
-# mv /tmp/src/indeZ.html /opt/eap/standalone/wellcome-content/index.html
-# rm -R /tmp/src/*
+mv /tmp/src/indeZ.html /opt/eap/welcome-content/index.html
+rm -R /tmp/src/*
 cd $JBOSS_HOME/bin
 ./standalone.sh -b 0.0.0.0
 tail -f /dev/null
